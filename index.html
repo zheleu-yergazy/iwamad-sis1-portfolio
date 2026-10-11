@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ergazy Zheleu | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a class="logo" href="#about">EZ.</a>
+            <div>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button id="theme-toggle">Dark mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <p class="tag">WEB DEVELOPMENT STUDENT</p>
+            <h1>Hello, I'm <span>Ergazy.</span></h1>
+            <p>
+                I study at KBTU and learn web development.
+                I enjoy drawing, volleyball, and building websites.
+            </p>
+            <a class="button" href="#projects">View my projects</a>
+        </section>
+
+        <section id="projects">
+            <p class="tag">MY WORK</p>
+            <h2>My Projects</h2>
+
+            <div class="projects">
+                <article class="card">
+                    <h3>Profile Card</h3>
+                    <p>A personal profile card built with HTML, CSS, and JavaScript.</p>
+                    <a href="https://github.com/zheleu-yergazy/iwamad-practice/tree/week-02"
+                       target="_blank" rel="noopener noreferrer">View project ↗</a>
+                </article>
+
+                <article class="card">
+                    <h3>React Profile</h3>
+                    <p>A profile website created with React and TypeScript.</p>
+                    <a href="https://github.com/zheleu-yergazy/iwamad-practice/tree/week-03"
+                       target="_blank" rel="noopener noreferrer">View project ↗</a>
+                </article>
+
+                <article class="card">
+                    <h3>Multi-page Website</h3>
+                    <p>A website with navigation, multiple pages, and shared state.</p>
+                    <a href="https://github.com/zheleu-yergazy/iwamad-practice/tree/week-04"
+                       target="_blank" rel="noopener noreferrer">View project ↗</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <p class="tag">GET IN TOUCH</p>
+            <h2>Contact Me</h2>
+            <p>Have a question? Send me a message.</p>
+
+            <form id="contact-form" novalidate>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text">
+                <p id="name-error" class="error"></p>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <p id="email-error" class="error"></p>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                <p id="message-error" class="error"></p>
+
+                <button class="button" type="submit">Send message</button>
+                <p id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Ergazy Zheleu | KBTU</p>
+    </footer>
+
+</body>
+</html>
