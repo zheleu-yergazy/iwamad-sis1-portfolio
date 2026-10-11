@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Ergazy Zheleu, a KBTU web development student.">
     <title>Ergazy Zheleu | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -10,14 +11,16 @@
 <body>
 
     <header>
-        <nav>
+        <nav aria-label="Main navigation">
             <a class="logo" href="#about">EZ.</a>
+
             <div>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
-            <button id="theme-toggle">Dark mode</button>
+
+            <button id="theme-toggle" type="button">Dark mode</button>
         </nav>
     </header>
 
@@ -67,15 +70,18 @@
 
             <form id="contact-form" novalidate>
                 <label for="name">Name</label>
-                <input id="name" name="name" type="text">
+                <input id="name" name="name" type="text"
+                       aria-describedby="name-error">
                 <p id="name-error" class="error"></p>
 
                 <label for="email">Email</label>
-                <input id="email" name="email" type="text">
+                <input id="email" name="email" type="email"
+                       aria-describedby="email-error">
                 <p id="email-error" class="error"></p>
 
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4"></textarea>
+                <textarea id="message" name="message" rows="4"
+                          aria-describedby="message-error"></textarea>
                 <p id="message-error" class="error"></p>
 
                 <button class="button" type="submit">Send message</button>
